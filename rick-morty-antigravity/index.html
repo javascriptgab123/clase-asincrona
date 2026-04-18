@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora el multiverso de Rick y Morty con nuestra guía completa de personajes, ubicaciones y episodios.">
+    <title>Rick and Morty Universe | Wiki Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Portal<span>Wiki</span></h1>
+            <ul class="nav-links">
+                <li><a href="#characters-section" class="active">Personajes</a></li>
+                <li><a href="#locations-section">Ubicaciones</a></li>
+                <li><a href="#episodes-section">Episodios</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h2>El Multiverso en Tus Manos</h2>
+                <p>Descubre cada detalle de tus personajes, lugares y momentos favoritos de Rick y Morty.</p>
+            </div>
+            <div class="portal-effect"></div>
+        </header>
+
+        <!-- Characters Section -->
+        <section id="characters-section" class="content-section">
+            <div class="section-header">
+                <h3>Explorar Personajes</h3>
+                <div class="filters-container">
+                    <input type="text" id="char-name" placeholder="Buscar por nombre...">
+                    <select id="char-status">
+                        <option value="">Estado (Todos)</option>
+                        <option value="alive">Vivo</option>
+                        <option value="dead">Muerto</option>
+                        <option value="unknown">Desconocido</option>
+                    </select>
+                    <select id="char-gender">
+                        <option value="">Género (Todos)</option>
+                        <option value="female">Femenino</option>
+                        <option value="male">Masculino</option>
+                        <option value="genderless">Sin género</option>
+                        <option value="unknown">Desconocido</option>
+                    </select>
+                    <button id="btn-filter-char" class="btn-primary">Filtrar</button>
+                </div>
+            </div>
+            <div id="characters-grid" class="grid-container">
+                <!-- Data will be loaded here -->
+                <div class="loader"></div>
+            </div>
+            <div id="char-pagination" class="pagination"></div>
+        </section>
+
+        <!-- Locations Section -->
+        <section id="locations-section" class="content-section hidden">
+            <div class="section-header">
+                <h3>Ubicaciones</h3>
+                <div class="filters-container">
+                    <input type="text" id="location-name" placeholder="Nombre de la ubicación...">
+                    <button id="btn-search-location" class="btn-primary">Buscar</button>
+                </div>
+            </div>
+            <div id="locations-grid" class="grid-container small-cards">
+                <!-- Data will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Episodes Section -->
+        <section id="episodes-section" class="content-section hidden">
+            <div class="section-header">
+                <h3>Episodios</h3>
+                <div class="filters-container">
+                    <input type="text" id="episode-name" placeholder="Nombre del episodio...">
+                    <button id="btn-search-episode" class="btn-primary">Buscar</button>
+                </div>
+            </div>
+            <div id="episodes-grid" class="grid-container small-cards">
+                <!-- Data will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Component -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close">&times;</button>
+            <div id="modal-body">
+                <h2 id="modal-title">Título de Modal</h2>
+                <div id="modal-info" class="modal-info"></div>
+                <h3>Personajes / Residentes</h3>
+                <div id="modal-characters-grid" class="grid-container modal-grid">
+                    <!-- Characters details will go here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Rick and Morty Wiki - Creado para el aprendizaje asíncrono</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
