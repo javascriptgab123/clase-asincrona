@@ -1,21 +1,12 @@
-# 🚀 Proyectos de Rick & Morty - JavaScript Asíncrono
+## 🚀 Proyectos de Rick & Morty - JavaScript Asíncrono
 
 ¡Bienvenido! Este repositorio está diseñado para ayudarte a entender cómo funciona JavaScript, el consumo de APIs y la asincronía, comparando un desarrollo tradicional (**Vanilla**) con uno optimizado (**Antigravity**).
 
-## 🛠️ Requisitos de Instalación
-
-Para que todo funcione correctamente, necesitas tener instalado **Node.js**. Si ya lo tienes, aquí te explicamos los comandos básicos:
-
-### 1. ¿Para qué sirve `npm install`?
-Imagina que un proyecto es como un mueble de IKEA. El código son las piezas, pero las herramientas para armarlo no vienen dentro de la caja para que no pese tanto.
-- El comando `npm install` descarga todas esas herramientas adicionales (llamadas "dependencias") que el proyecto necesita para funcionar.
-- **¿Cuándo usarlo?**: Siempre que descargues un proyecto nuevo por primera vez o si ves que faltan carpetas como `node_modules`.
-
----
-
 ## 🏃 Cómo ejecutar los proyectos
 
-Para ver la aplicación funcionando en tu navegador, necesitamos un "servidor local". Sigue estos pasos según la versión que quieras ver:
+Este es un proyecto de **JavaScript Puro (Vanilla JS)**, por lo que **no necesitas ejecutar `npm install`**. Los archivos funcionan directamente en el navegador.
+
+Para ver la aplicación funcionando, recomendamos usar un "servidor local" para evitar problemas de permisos. Sigue estos pasos según la versión que quieras ver:
 
 ### 🌌 Opción A: Proyecto Antigravity (Optimizado)
 Esta versión utiliza técnicas modernas y asistencia inteligente.
